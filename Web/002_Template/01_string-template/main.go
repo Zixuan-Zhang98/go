@@ -4,7 +4,6 @@ import "fmt"
 
 func main() {
 	name := "Zixuan Zhang"
-
 	// string concatenation as templating
 	tpl := `
 	<!DOCTYPE html>
