@@ -18,6 +18,6 @@ func main() {
 	</html>
 	`
 	fmt.Println(tpl)
-	// use `go run main.go > index.html` to import what's printed out into a file
+	// use "go run main.go > index.html" to import what's printed out into a file
 	// html are just text
 }
