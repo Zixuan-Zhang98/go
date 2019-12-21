@@ -8,6 +8,8 @@ import (
 
 func main() {
 	tpl, err := template.ParseFiles("tpl.gohtml")
+	// tpl is a pointer to a Template
+	// Template is just a container which contains all the parsed files
 	if err != nil {
 		log.Fatalln(err)
 	}
