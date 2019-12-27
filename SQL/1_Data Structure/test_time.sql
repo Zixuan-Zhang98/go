@@ -58,4 +58,11 @@ INSERT test_timestamp(a) VALUES(NULL); -- NULL
 INSERT test_timestamp(a) VALUES(); -- ERROR
 
 -- 测试YEAR
-CREATE
+CREATE TABLE test_year(
+    a YEAR
+);
+
+INSERT test_year(a) VALUES(1901);
+-- 00~69 -> 2000~2069; 70~99 -> 1970~1999
+-- 0 -> 0000
+-- '0' -> 2000
