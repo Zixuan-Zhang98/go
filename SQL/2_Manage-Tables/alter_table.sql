@@ -66,3 +66,11 @@ MODIFY username VARCHAR(20); -- UNIQUE属性会被保留，NOT NULL属性不会�
 
 ALTER TABLE user3
 CHANGE username user VARCHAR(30) NOT NULL;
+
+
+CREATE TABLE user5(
+    id INT UNSIGNED,
+    username VARCHAR(5) NOT NULL UNIQUE,
+    password CHAR(32) NOT NULL,
+    email VARCHAR(10) NOT NULL
+);
