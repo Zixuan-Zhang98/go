@@ -30,7 +30,6 @@ INSERT dep(depName,depDesc) VALUES('PHP教学部','研发PHP课件'),
 
 
 -- 查询 emp id username age  部门名称 dep depName
-
 SELECT emp.id,emp.username,emp.age,dep.depName FROM emp,dep;
 
 SELECT e.id,e.username,e.age,d.depName
