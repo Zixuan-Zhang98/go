@@ -40,6 +40,12 @@ FROM cate AS s
 RIGHT JOIN cate AS p
 ON s.pId=p.id;
 
+-- 查询有子分类的分类
+SELECT p.id,p.cateName  AS pCateName,s.cateName AS sCateName
+FROM cate AS s
+JOIN cate AS p
+ON s.pId=p.id;
+
 -- 查询所有的分类并且得到子分类的数目
 SELECT p.id,p.cateName  AS pCateName,COUNT(s.cateName) AS count
 FROM cate AS s
