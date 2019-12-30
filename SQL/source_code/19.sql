@@ -49,7 +49,7 @@ id INT UNSIGNED AUTO_INCREMENT KEY,
 title VARCHAR(100) NOT NULL UNIQUE,
 content VARCHAR(1000) NOT NULL,
 cateId TINYINT UNSIGNED NOT NULL,
-FOREIGN KEY(cateId) REFERENCES news_cate(id)
+    FOREIGN KEY(cateId) REFERENCES news_cate(id)
 )ENGINE=INNODB;
 
 INSERT news_cate(cateName) VALUES('国内新闻'),
@@ -78,7 +78,6 @@ UPDATE news_cate SET cateName='教育' WHERE id=5;
 UPDATE news_cate SET id=50 WHERE cateName='教育';
 
 -- 添加外键名称
-
 -- 新闻分类表 news_cate
 CREATE TABLE news_cate(
 id TINYINT UNSIGNED AUTO_INCREMENT KEY,
