@@ -1,4 +1,4 @@
-package leetcode
+package main
 
 func lengthOfLongestSubstring1(s string) int {
 	// location[s[i]] == j 表示：
