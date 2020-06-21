@@ -29,8 +29,8 @@ This includes (among many other things) an HTTP client and an HTTP server.
 */
 
 func main() {
-	http.HandleFunc("/", func(writer http.ResponseWriter, request *http.Request) {
-		_, err := fmt.Fprintf(writer, "Hello, you've requested: %s\n", request.URL.Path)
+	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+		_, err := fmt.Fprintf(w, "Hello, you've requested: %s\n", r.URL.Path)
 		if err != nil {
 			fmt.Println(err)
 		}
